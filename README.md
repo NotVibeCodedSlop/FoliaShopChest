@@ -2,7 +2,7 @@
 
 > A open source shop plugin compatible with Folia that uses chests.
 
-I have no idea if it works without luckperms because i vibe coded this in 15 minutes using gemini
+I have no idea if it works without luckperms because i vibe coded this in 15 minutes using gemini but then tested it for way too long
 ###### yes my username says otherwise but well im not an expert at java at all and because of that i can't publish this to modrinth :(
 Also well you do /shopconfig while looking at a chest
 <img src="gif.gif.gif" autoplay></img>
