@@ -1,0 +1,30 @@
+name: Build Minecraft
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 25 & Setup Gradle
+        uses: actions/setup-java@v4
+        with:
+          java-version: '25'
+          distribution: 'temurin'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          build-root-directory: project
+
+      - name: Build
+        run: ./gradlew assemble --no-daemon --parallel --build-cache -x test -x javadoc
+        working-directory: project
