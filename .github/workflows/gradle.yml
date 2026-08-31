@@ -35,3 +35,9 @@ jobs:
 
     - name: Build with Gradle Wrapper
       run: ./gradlew build
+
+    - name: Upload Built Jar
+      uses: actions/upload-artifact@v4
+      with:
+        name: FoliaChestShop-Jar
+        path: build/libs/*.jar
