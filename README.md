@@ -1,6 +1,6 @@
 # FoliaShopChest
 
-> A open source shop plugin compatible with paper folia and forks (1.21.4+) that uses chests.
+> An open source shop plugin compatible with paper folia and forks (1.21.4+) that uses chests.
 
 add into your plugins folder and DONE
 i vibe coded this in 15 minutes using gemini but then tested it for way too long
